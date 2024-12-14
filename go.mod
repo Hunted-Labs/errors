@@ -1,4 +1,4 @@
-module github.com/go-errors/errors
+module github.com/Hunted-Labs/errors
 
 go 1.14
 

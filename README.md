@@ -1,7 +1,7 @@
-go-errors/errors
+Hunted-Labs/errors
 ================
 
-[![Build Status](https://travis-ci.org/go-errors/errors.svg?branch=master)](https://travis-ci.org/go-errors/errors)
+[![Build Status](https://travis-ci.org/Hunted-Labs/errors.svg?branch=master)](https://travis-ci.org/Hunted-Labs/errors)
 
 Package errors adds stacktrace support to errors in go.
 
@@ -16,13 +16,13 @@ Usage
 -----
 
 Full documentation is available on
-[godoc](https://godoc.org/github.com/go-errors/errors), but here's a simple
+[godoc](https://godoc.org/github.com/Hunted-Labs/errors), but here's a simple
 example:
 
 ```go
 package crashy
 
-import "github.com/go-errors/errors"
+import "github.com/Hunted-Labs/errors"
 
 var Crashed = errors.Errorf("oh dear")
 
@@ -39,7 +39,7 @@ package main
 import (
     "crashy"
     "fmt"
-    "github.com/go-errors/errors"
+    "github.com/Hunted-Labs/errors"
 )
 
 func main() {
@@ -79,6 +79,6 @@ This package is licensed under the MIT license, see LICENSE.MIT for details.
 > ```
 * v1.4.0 *BREAKING* v1.4.0 reverted all changes from v1.3.0 and is identical to v1.2.0
 * v1.4.1 no code change, but now without an unnecessary cover.out file.
-* v1.4.2 performance improvement to ErrorStack() to avoid unnecessary work https://github.com/go-errors/errors/pull/40
-* v1.5.0 add errors.Join() and errors.Unwrap() copying the stdlib https://github.com/go-errors/errors/pull/40
+* v1.4.2 performance improvement to ErrorStack() to avoid unnecessary work https://github.com/Hunted-Labs/errors/pull/40
+* v1.5.0 add errors.Join() and errors.Unwrap() copying the stdlib https://github.com/Hunted-Labs/errors/pull/40
 * v1.5.1 fix build on go1.13..go1.19 (broken by adding Join and Unwrap with wrong build constraints)
